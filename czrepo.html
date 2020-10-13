@@ -45,7 +45,15 @@
             <p>【微信用户请选择浏览器打开后点击】</p>
         </div>
     </div>
-    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div id="czt" class="btn" onclick="czt_surveillance()">
+            <h4>CZT-SP</h4>
+            <p>Android</p>
+            <img src="res/180.png" alt="czt" style="width:100px;" />
+            <p>点击下载</p>
+            <p>【微信用户请选择浏览器打开后点击】</p>
+        </div>
+    </div>
     <div class="col-md-4"></div>
 
 
@@ -55,6 +63,9 @@
 <script>
     function czt() {
         location.href = "https://web.jdccore.com:8191/cztong.apk";
+    };
+    function czt_surveillance() {
+        location.href = "https://web.jdccore.com:8191/cztong-surveillance-cz.apk";
     };
 </script>
 
