@@ -21,6 +21,7 @@
         height: 300px;
         background-color: rgba(0, 0, 0, .2);
         text-align: center;
+        margin: auto;
     }
 </style>
 
@@ -30,46 +31,53 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">
-                    <img alt="DPG" src="res/DPG_stamp.png" style="height:20px;">
+                    <!-- <img alt="DPG" src="res/DPG_stamp.png" style="height:20px;"> -->
+                    <p>软件发布平台</p>
                 </a>
             </div>
+            
         </div>
     </nav>
 
-    <div class="col-md-4" style="text-align: center;">
-        
 
-        <div>
-            <!-- <a href="http://182.148.53.156:27017">[监控测试Web版]</a> -->
-        </div>
 
-<!--         <div id="czt" class="btn" onclick="czt()">
+    <div>
+        <!-- <a href="http://182.148.53.156:27017">[监控测试Web版]</a> -->
+    </div>
+
+    <!--         <div id="czt" class="btn" onclick="czt()">
             <h4>CZT</h4>
             <p>Android</p>
             <img src="res/180.png" alt="czt" style="width:100px;" />
             <p>点击下载</p>
             <p>【微信用户请选择浏览器打开后点击】</p>
         </div> -->
-        <hr/>
-        <div id="czt" class="btn" onclick="czt_surveillance()">
-            <h4>CZT-SP</h4>
-            <p>Android</p>
-            <img src="res/180_sp.png" alt="czt" style="width:100px;" />
-            <p>点击下载</p>
-            <p>【微信用户请选择浏览器打开后点击】</p>
-        </div>
 
-        <hr/>
-        <div>
-            <img src="res/cztios.jpg" >
-            <h4>iOS CZ通SP版</h4>
+    <div class="container">
+        <div class="col-md-6" style="text-align: center;">
+            <br /><br />
+            <div id="czt" class="btn" onclick="czt_surveillance()">
+                <h4>CZT-SP</h4>
+                <p>Android</p>
+                <img src="res/180_sp.png" alt="czt" style="width:100px;" />
+                <p>点击下载</p>
+                <p>【微信用户请选择浏览器打开后点击】</p>
+            </div>
         </div>
+        <div class="col-md-6" style="text-align: center;">
+            <br /><br />
+            <div class="btn">
+                <p></p>
+                <p></p>
+                <p></p>
+                <img src="res/cztios.jpg">
+                <h4>iOS CZ通SP版</h4>
+            </div>
+        </div>
+    </div>
 
-    </div>
-    <div class="col-md-4">
-        
-    </div>
-    <div class="col-md-4"></div>
+
+
 
 
 
