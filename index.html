@@ -4,101 +4,163 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="res/icon/cer.ico" type="image/x-icon" />
-    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./res/icon/cer.ico" type="image/x-icon" />
+    <!-- <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <link href="./css/bootstarp.css" rel="stylesheet">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
 </head>
 <title>JDCCORE</title>
+<style>
+    .navbar-default {
+        padding-top: 30px;
+        background-color: transparent;
+        border: 0px;
+    }
+
+    #bigBanner {
+        background-color: transparent;
+        background-image: url("./res/pics/bg3.png");
+        height: 300px;
+    }
+
+    #picholder {
+        text-align: center;
+    }
+
+    .thumbnail {
+        text-align: center;
+        border: 0px;
+    }
+
+    .thumbnail:hover {
+        background-color: #fafafa;
+        box-shadow: 10px 10px 20px rgb(134, 134, 134),
+            -10px -10px 20px rgba(255, 255, 255, 0.4);
+        transition: box-shadow .2s ease-out;
+    }
+
+    .thumbnail>img {
+        border-radius: 100px;
+        height: 150px;
+    }
+
+    #eg {
+        background-color: transparent;
+        background-image: url("./res/pics/bg4.png");
+    }
+</style>
 
 <body>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#umi-menu"
+                    aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#" style="padding-top:5px;padding-bottom: 5px;"><img alt="JDCCORE"
-                        src="res/logo.png" style="height: 100%;"></a>
+                        src="res/logo.png" style="height: 100%;margin-left:30px;"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">服务与支持</a></li>
-                    <li><a href="#">产品及解决方案</a></li>
-                </ul>
-
+            <div class="collapse navbar-collapse" id="umi-menu">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">关于我们</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                            aria-expanded="false">软件发布 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <!-- <li><a href="repo.html">铁务通2.0</a></li>
-                            <li><a href="czrepo.html">CZT-Surveillance</a></li> -->
-
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">OTH</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./digitalize.html">产品</a></li>
+                    <li><a href="./exbeg.html">案例</a></li>
+                    <li><a href="./aboutus.html">联系我们</a></li>
                 </ul>
+
+
             </div>
         </div>
     </nav>
 
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="res/banner/banner1.png" alt="...">
-                <div class="carousel-caption">
+    <div class="jumbotron" id="bigBanner">
+        <div class="container">
 
+            <div class="col-md-6">
+                <div id="picholder">
+                    <!-- <img src="./res/180.png" alt=""> -->
                 </div>
             </div>
-            <div class="item">
-                <img src="res/banner/banner2.png" alt="...">
-                <div class="carousel-caption">
+            <div class="col-md-6" style="text-align: right;">
+                <h1>交大华芯</h1>
+                <p>科技创造人与自然和文化之美</p>
+                <p><a class="btn btn-primary btn-lg" href="./aboutus.html" role="button">关于我们</a></p>
+            </div>
 
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div id="section">
+
+        <div class="container">
+
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <img src="./res/pics/rit.png" alt="...">
+                    <div class="caption">
+                        <h3>铁路信息化</h3>
+                        <p><a href="./digitalize.html" class="btn btn-default" role="button">详情</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <img src="res/banner/banner3.png" alt="...">
-                <div class="carousel-caption">
 
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <img src="./res/pics/exhib.png" alt="...">
+                    <div class="caption">
+                        <h3>展陈业务</h3>
+                        <p><a href="./exhibition.html" class="btn btn-default" role="button">详情</a></p>
+                    </div>
                 </div>
             </div>
+
+
         </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <hr />
-    <div style="text-align:center;background-color: #e7e7e7;">
 
-        <!-- <div class="col-md-6"><img src="2d5ce885cbf2c85edf9f188e12c97319.gif" /></div> -->
-        <div class="col-md-6"><img style="height:100px;" src="./res/logo.png" /></div>
+
+    </div>
+
+    <!-- <div class="jumbotron" id="eg">
+        <div class="container">
+            <div class="col-md-6">
+                <h3>经典案例</h3>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+
+        </div>
+    </div> -->
+
+
+    <hr />
+    <div style="text-align:center;">
+
+       
+        <div class="col-md-2" style="text-align: right;">
+            
+        </div>
+        <div class="col-md-4" style="text-align: left;">
+            <p><span class="glyphicon glyphicon-map-marker"></span>&nbsp;北京经济技术开发区经海三路109号院63号楼3层</p>
+            <p><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;010-62924968</p>
+        </div>
         <div class="col-md-6">
-            <h3>网站正在建设中，敬请期待</h3>
-            <h3> 交大华芯 </h3>
+            <h4> 交大华芯 </h4>
+            <p>京ICP备20010367号-1</p>
         </div>
 
     </div>
