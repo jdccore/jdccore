@@ -42,7 +42,12 @@
       <img src="res/192_192.jpg" alt="twt" style="width:100px;" />
       <p>Android</p>
       <p>点击下载</p>
-      <!-- <img src="res/surveillance.png" alt="twt" style="width:100px;" /> -->
+    </div>
+    <div id="app07242" class="btn" onclick="download('07242')">
+      <h4>工管平台0724-监控Beta</h4>
+      <img src="res/192_192.jpg" alt="twt" style="width:100px;" />
+      <p>Android</p>
+      <p>点击下载</p>
     </div>
     <!--   <div id="tx" class="btn" onclick="tx()"
     style="padding:10px;margin:10px;border-radius:10px;width:200px;height:200px;background-color:rgba(0,0,0,.2);text-align:center;">
@@ -64,10 +69,15 @@
   //   location.href = "https://web.jdccore.com:8191/railmessage.apk";
   // };
   function download(v) {
-    if(v==="0724"){
+    if (v === "0724") {
       location.href = "http://117.161.75.86:50080/drop/tiechat_v1.3.0724.1.apk";
+    } else if (v === "07242") {
+      location.href = "http://117.161.75.86:50080/drop/tiechat_v1.3.0724.2.apk";
     }
-    
+    else{
+
+    }
+
   };
 
 </script>
