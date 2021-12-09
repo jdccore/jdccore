@@ -30,7 +30,14 @@
   </div>
   <div style="text-align:center;">
 
-    <div id="app08061" class="btn" onclick="download('08061')">
+    <div id="app12081" class="btn" onclick="download('12081')">
+      <h4>工管平台v1.3.1208.1</h4>
+      <img src="res/192_192.jpg" alt="twt" style="width:100px;" />
+      <p>Android</p>
+      <p>点击下载</p>
+    </div>
+
+    <!-- <div id="app08061" class="btn" onclick="download('08061')">
       <h4>工管平台v1.3.0806.1</h4>
       <img src="res/192_192.jpg" alt="twt" style="width:100px;" />
       <p>Android</p>
@@ -41,7 +48,7 @@
       <img src="res/192_192.jpg" alt="twt" style="width:100px;" />
       <p>Android</p>
       <p>点击下载</p>
-    </div>
+    </div> -->
 
   </div>
 
@@ -49,7 +56,9 @@
 </body>
 <script>
   function download(v) {
-    if (v === "08061") {
+    if (v === "12081") {
+      location.href = "http://117.161.75.86:50080/drop/tiechat_v1.3.1208.1.apk";
+    }else if (v === "08061") {
       location.href = "http://117.161.75.86:50080/drop/tiechat_v1.3.0806.1.apk";
     } else if (v === "07242") {
       location.href = "http://117.161.75.86:50080/drop/tiechat_v1.3.0724.2.apk";
